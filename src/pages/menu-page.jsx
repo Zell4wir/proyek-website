@@ -90,7 +90,7 @@ const MenuPage = () => {
       price: "Rp 2.000",
       sold: "300+ Terjual",
       image:
-        "public/Yummyy.jpg",
+        "Yummyy.jpg",
       category: "makanan penutup",
       isLimited: true,
     },
