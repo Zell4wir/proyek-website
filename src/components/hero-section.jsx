@@ -12,8 +12,44 @@ function HeroSection() {
     setActiveIndex(realIndex);
   };
   
+  // Tambahkan ref untuk Swiper
+  const swiperRef = React.useRef(null);
+
+  // Fungsi untuk pindah ke slide tertentu
+  const goToSlide = (index) => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideToLoop(index);
+    }
+  };
+
   return (
     <div className="max-lg:screen bg-gray-100">
+      <style>
+        {`
+          /* Swiper navigation buttons */
+          .swiper-button-next,
+          .swiper-button-prev {
+            color: #6ee7b7 !important; /* pastel green */
+            background: rgba(110, 231, 183, 0.15);
+            border-radius: 9999px;
+            width: 44px;
+            height: 44px;
+            transition: background 0.2s;
+          }
+          .swiper-button-next:hover,
+          .swiper-button-prev:hover {
+            background: rgba(110, 231, 183, 0.3);
+          }
+          /* Swiper pagination bullets */
+          .swiper-pagination-bullet {
+            background: #bbf7d0 !important; /* lighter pastel green */
+            opacity: 1;
+          }
+          .swiper-pagination-bullet-active {
+            background: #34d399 !important; /* darker pastel green */
+          }
+        `}
+      </style>
       <div className="relative w-full h-screen max-h-[1000px] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10"></div>
         <img
@@ -38,6 +74,7 @@ function HeroSection() {
             <div className="w-full md:w-1/2 pl-0 md:pl-10">
               <div className="relative">
                 <Swiper
+                  ref={swiperRef}
                   modules={[Pagination, Autoplay, Navigation]}
                   pagination={{ 
                     clickable: true,
@@ -83,11 +120,12 @@ function HeroSection() {
                 </Swiper>
                 <div className="flex mt-4 gap-2 justify-center">
                   <div
-                    className={`w-24 h-16 rounded-md overflow-hidden transition-all duration-300 ${
+                    className={`w-24 h-16 rounded-md overflow-hidden transition-all duration-300 cursor-pointer ${
                       activeIndex === 0
                         ? "ring-2 ring-yellow-400 scale-105"
                         : "opacity-70"
                     }`}
+                    onClick={() => goToSlide(0)}
                   >
                     <img
                       src="jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
@@ -96,11 +134,12 @@ function HeroSection() {
                     />
                   </div>
                   <div
-                    className={`w-24 h-16 rounded-md overflow-hidden transition-all duration-300 ${
+                    className={`w-24 h-16 rounded-md overflow-hidden transition-all duration-300 cursor-pointer ${
                       activeIndex === 1
                         ? "ring-2 ring-yellow-400 scale-105"
                         : "opacity-70"
                     }`}
+                    onClick={() => goToSlide(1)}
                   >
                     <img
                       src="davide-cantelli-jpkfc5_d-DI-unsplash.jpg"
@@ -109,11 +148,12 @@ function HeroSection() {
                     />
                   </div>
                   <div
-                    className={`w-24 h-16 rounded-md overflow-hidden transition-all duration-300 ${
+                    className={`w-24 h-16 rounded-md overflow-hidden transition-all duration-300 cursor-pointer ${
                       activeIndex === 2
                         ? "ring-2 ring-yellow-400 scale-105"
                         : "opacity-70"
                     }`}
+                    onClick={() => goToSlide(2)}
                   >
                     <img
                       src="emy-XoByiBymX20-unsplash.jpg"
