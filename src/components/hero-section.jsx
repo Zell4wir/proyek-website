@@ -12,10 +12,8 @@ function HeroSection() {
     setActiveIndex(realIndex);
   };
   
-  // Tambahkan ref untuk Swiper
   const swiperRef = React.useRef(null);
 
-  // Fungsi untuk pindah ke slide tertentu
   const goToSlide = (index) => {
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slideToLoop(index);

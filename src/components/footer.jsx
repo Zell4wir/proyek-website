@@ -1,5 +1,5 @@
 import React from 'react'
-import { Soup, Facebook, Youtube, Twitch} from 'lucide-react'
+import { Soup, Facebook, Youtube } from 'lucide-react'
 
 function Footer() {
   return (

@@ -1,4 +1,3 @@
-// The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 import { useState } from "react";
 import NavBar from "../components/navbar";
 import Footer from "../components/footer";
@@ -104,10 +103,7 @@ const MenuPage = () => {
     <>
       <NavBar/>
       <div className="min-h-screen text-white">
-
-        {/* Main Content */}
         <main className="container mx-auto py-8 px-4">
-          {/* Category Tabs */}
           <div className="mb-8">
             <div className="flex space-x-4 border-b border-gray-700 pb-2">
               <button
@@ -152,7 +148,6 @@ const MenuPage = () => {
               </button>
             </div>
           </div>
-          {/* Products Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredItems.map((item) => (
               <div

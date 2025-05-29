@@ -1,4 +1,4 @@
-import { Star, Users, ShoppingCart, SquareMenu } from "lucide-react";
+import { Star, Users, SquareMenu } from "lucide-react";
 import React from "react";
 
 function StatSection() {
