@@ -13,8 +13,8 @@ function HeroSection() {
   };
   
   return (
-    <div className="max-md:screen bg-gray-100">
-      <div className="relative w-full h-screen max-h-[600px] overflow-hidden">
+    <div className="max-lg:screen bg-gray-100">
+      <div className="relative w-full h-screen max-h-[1000px] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10"></div>
         <img
           src="annie-spratt-R3LcfTvcGWY-unsplash.jpg"
