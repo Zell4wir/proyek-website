@@ -1,26 +1,26 @@
 import React from 'react'
-import { Clover, Facebook, Youtube, Twitch} from 'lucide-react'
+import { Soup, Facebook, Youtube, Twitch} from 'lucide-react'
 
 function Footer() {
   return (
     <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
       <aside>
-        <Clover size={32} />
+        <Soup size={32} />
         <p>
-          Hololive ID Gen 3<br />
-          Vestia Zeta<br />
+          MIEATS<br />
+          Tempat Makan No.1 di Indonesia<br />
         </p>
       </aside>
       <nav>
         <h6 className="footer-title">Social Media</h6>
         <div className="grid grid-flow-col gap-4">
-          <a href='facebook.com/vestiazeta' className='hover:bg-red-500'> 
+          <a href='facebook.com/vestiazeta' className='hover:bg-green-300'> 
             <Facebook />
           </a>
-          <a href='youtube.com/vestiazeta' className='hover:bg-red-500'>
+          <a href='youtube.com/vestiazeta' className='hover:bg-green-300'>
             <Youtube />
           </a>
-          <a href='https://www.twitch.tv/vestiazeta' className='hover:bg-red-500'>
+          <a href='https://www.twitch.tv/vestiazeta' className='hover:bg-green-300'>
             <Twitch />
           </a>
         </div>

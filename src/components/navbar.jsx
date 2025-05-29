@@ -1,4 +1,4 @@
-import { Soup, CodeXml } from "lucide-react";
+import { Soup } from "lucide-react";
 import React from "react";
 
 function NavBar() {
@@ -11,7 +11,6 @@ function NavBar() {
           <Soup size={32} />
           <h1 className="font-bold text-xl text-green-700">MIEATS</h1>
         </div>
-        {/* Desktop Menu */}
         <div className="flex-1 flex justify-center">
           <ul className="hidden md:flex gap-8">
             <li>
@@ -31,8 +30,11 @@ function NavBar() {
             </li>
           </ul>
         </div>
+
         {/* Hamburger Button */}
         
+
+
         <button
           className="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
           onClick={() => setMenuOpen((open) => !open)}
@@ -62,7 +64,6 @@ function NavBar() {
           </svg>
         </button>
       </div>
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-green-100 border-t border-green-300 shadow">
           <ul className="flex flex-col gap-4 p-4">
