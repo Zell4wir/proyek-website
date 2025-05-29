@@ -1,40 +1,102 @@
-import { Cat, CodeXml } from 'lucide-react';
-import React from 'react'
+import { Soup, CodeXml } from "lucide-react";
+import React from "react";
 
 function NavBar() {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
   return (
-    <header className="sticky top-0 border bg-white border-gray-500 backdrop-blur-md shadow-md z-50">
+    <header className="sticky top-0 border bg-green-100 border-green-300 backdrop-blur-md shadow-md z-50">
       <div className="flex max-w-7xl mx-auto justify-between h-16 items-center">
         <div className="flex items-center gap-2">
-          <Cat size={32} />
-          <h1 className="font-bold text-xl text-gray-600">VESTIA ZETA</h1>
+          <Soup size={32} />
+          <h1 className="font-bold text-xl text-green-700">MIEATS</h1>
         </div>
-        <ul className="hidden-md flex gap-8">
-          <li>
-            <a href="/" className="hover:text-red-400">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/about" className="hover:text-red-400">
-              Tentang Zeta
-            </a>
-          </li>
-          <li>
-            <a href="/og-song" className="hover:text-red-400">
-              OG Song
-            </a>
-          </li>
-        </ul>
-        <a
-          href="https://www.youtube.com/@VestiaZeta"
-          className="bg-red-500 px-4 py-2 text-white rounded-md hover:bg-red-400"
+        {/* Desktop Menu */}
+        <div className="flex-1 flex justify-center">
+          <ul className="hidden md:flex gap-8">
+            <li>
+              <a href="/" className="hover:text-green-500">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="/produk" className="hover:text-green-500">
+                Produk
+              </a>
+            </li>
+            <li>
+              <a href="/costumer-service" className="hover:text-green-500">
+                Costumer Service
+              </a>
+            </li>
+          </ul>
+        </div>
+        {/* Hamburger Button */}
+        <button
+          className="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+          onClick={() => setMenuOpen((open) => !open)}
+          aria-label="Toggle menu"
         >
-          YouTube mY isteri
-        </a>
+          <svg
+            className="w-6 h-6 text-green-700"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            {menuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 8h16M4 16h16"
+              />
+            )}
+          </svg>
+        </button>
       </div>
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden bg-green-100 border-t border-green-300 shadow">
+          <ul className="flex flex-col gap-4 p-4">
+            <li>
+              <a
+                href="/"
+                className="hover:text-green-500"
+                onClick={() => setMenuOpen(false)}
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/produk"
+                className="hover:text-green-500"
+                onClick={() => setMenuOpen(false)}
+              >
+                Produk
+              </a>
+            </li>
+            <li>
+              <a
+                href="/costumer-service"
+                className="hover:text-green-500"
+                onClick={() => setMenuOpen(false)}
+              >
+                Costumer Service
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
     </header>
   );
 }
 
-export default NavBar
+export default NavBar;
