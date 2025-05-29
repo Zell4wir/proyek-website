@@ -67,7 +67,7 @@ function HeroSection() {
                       <img
                         src="davide-cantelli-jpkfc5_d-DI-unsplash.jpg"
                         alt="Roti"
-                        className="w-full h-full object-cover object-top"
+                        className="w-full h-full object-cover object-center"
                       />
                     </div>
                   </SwiperSlide>
@@ -105,7 +105,7 @@ function HeroSection() {
                     <img
                       src="davide-cantelli-jpkfc5_d-DI-unsplash.jpg"
                       alt="Thumbnail 2"
-                      className="w-full h-full object-cover object-top"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
                   <div
