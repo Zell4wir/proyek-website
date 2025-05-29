@@ -31,7 +31,7 @@ function AboutSection() {
             <div className="bg-gray-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="h-48 mb-4 rounded-lg overflow-hidden">
                 <img
-                  src="public/svitlana-mnkU6aQowCE-unsplash.jpg"
+                  src="svitlana-mnkU6aQowCE-unsplash.jpg"
                   alt="Minuman"
                   className="w-full h-full object-cover object-center"
                 />
