@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from '../components/navbar'
 import Footer from '../components/footer'
 
-function OGSong() {
+function CostumerService() {
   return (
     <div>
         <NavBar/>
@@ -11,4 +11,4 @@ function OGSong() {
   )
 }
 
-export default OGSong
+export default CostumerService;
