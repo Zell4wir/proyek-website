@@ -1,46 +1,31 @@
-import { Facebook, Instagram, Twitter, Youtube, YoutubeIcon } from 'lucide-react'
-import React from 'react'
+import { Star, Users, ShoppingCart } from "lucide-react";
+import React from "react";
 
 function StatSection() {
   return (
-    <section className="py-32">
-      <div className="bg-[url(public/download.jpeg)] bg-fixed">
-        <div className="grid grid-cols-2 md:grid-cols-4 items-center mx-auto bg-black/70 py-10 h-full rounded-lg max-w-full text-center">
-          <div className="font-bold text-white">
-            <div className="flex flex-col items-center justify-center">
-              <h1>
-                <YoutubeIcon size={25} />
-              </h1>
-            </div>
-            <h1 className="text-2xl">977K</h1>
-            <p>Subscribers</p>
+    <section className="py-2">
+      <div className="w-full flex justify-center mb-6"></div>
+      <div className="bg-[url(kantin.jpeg)] bg-fixed">
+        <div className="grid grid-cols-3 items-center text-center mx-auto bg-fixed bg-black/70 py-8">
+          <div className="font-bold text-white flex flex-col items-center">
+            <a href="/banyak-peminat" className="hover:text-red-700">
+              <Users size={48} className="text-red-600 mb-2" />
+              <p className="text-lg">Banyak Peminat</p>
+            </a>
           </div>
-          <div className="font-bold text-white">
-            <div className="flex items-center justify-center">
-              <h1>
-                <Instagram size={25} />
-              </h1>
-            </div>
-            <h1 className="text-2xl">181K</h1>
-            <p>Followers Instagram</p>
+
+          <div className="font-bold text-white flex flex-col items-center">
+            <a href="/jualan-bervariasi" className="hover:text-green-700">
+              <ShoppingCart size={48} className="text-green-600 mb-2" />
+              <p className="text-lg">Jualan Bervariasi</p>
+            </a>
           </div>
-          <div className="font-bold text-white">
-            <div className="flex items-center justify-center">
-              <h1 className="text-5xl">
-                <Facebook size={25} />
-              </h1>
-            </div>
-            <h1 className="text-2xl">9,08K</h1>
-            <p>Followers FB</p>
-          </div>
-          <div className="font-bold text-white">
-            <div className="flex items-center justify-center">
-              <h1>
-                <Twitter size={25} />
-              </h1>
-            </div>
-            <h1 className="text-2xl">507.2K</h1>
-            <p>Followers Twitter</p>
+
+          <div className="font-bold text-white flex flex-col items-center">
+            <a href="/review-dan-ulasan" className="hover:text-yellow-600">
+              <Star size={48} className="text-yellow-500 mb-2" />
+              <p className="text-lg">Review dan Ulasan</p>
+            </a>
           </div>
         </div>
       </div>
@@ -48,4 +33,4 @@ function StatSection() {
   );
 }
 
-export default StatSection
+export default StatSection;
