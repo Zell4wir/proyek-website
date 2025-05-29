@@ -22,7 +22,7 @@ function MenuTerlaris() {
             mencobanya!
           </p>
           <button className="btn btn-primary">
-            <a href="/produk">Yuk Cobain!</a>
+            <a href="/menu">Yuk Cobain!</a>
           </button>
         </div>
       </div>

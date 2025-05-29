@@ -19,8 +19,8 @@ function NavBar() {
               </a>
             </li>
             <li>
-              <a href="/produk" className="hover:text-green-500">
-                Produk
+              <a href="/menu" className="hover:text-green-500">
+                Menu
               </a>
             </li>
             <li>

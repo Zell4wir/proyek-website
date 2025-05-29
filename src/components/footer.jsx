@@ -20,9 +20,6 @@ function Footer() {
           <a href='' className='hover:bg-green-300'>
             <Youtube />
           </a>
-          <a href='' className='hover:bg-green-300'>
-            <Twitch />
-          </a>
         </div>
       </nav>
     </footer>
