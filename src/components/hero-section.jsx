@@ -48,9 +48,17 @@ function HeroSection() {
           .swiper-pagination-bullet-active {
             background: #34d399 !important; /* darker pastel green */
           }
+          /* Responsive fix for mobile viewport height */
+          @media (max-width: 768px) {
+            .hero-mobile-full {
+              min-height: 100dvh;
+              height: 100dvh;
+              max-height: none;
+            }
+          }
         `}
       </style>
-      <div className="relative w-full h-screen max-h-[1000px] overflow-hidden">
+      <div className="relative w-full h-screen max-h-[1000px] overflow-hidden hero-mobile-full">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10"></div>
         <img
           src="annie-spratt-R3LcfTvcGWY-unsplash.jpg"

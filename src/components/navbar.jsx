@@ -32,6 +32,7 @@ function NavBar() {
           </ul>
         </div>
         {/* Hamburger Button */}
+        
         <button
           className="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
           onClick={() => setMenuOpen((open) => !open)}
