@@ -7,61 +7,61 @@ const App = () => {
   const gameItems = [
     {
       id: 1,
-      name: "Nessie - Sparkling Shiny | Limited fish",
-      price: "Rp 2500",
-      sold: "40+ Terjual",
+      name: "Seblak Special",
+      price: "Rp 15.000",
+      sold: "1k+ Terjual",
       image:
-        "https://readdy.ai/api/search-image?query=A%20glowing%20blue%20neon%20fish%20with%20sparkling%20scales%20against%20a%20dark%20blue%20background%2C%20digital%20game%20asset%2C%20high%20quality%20render%2C%20holographic%20effect%2C%20limited%20edition%20collectible%2C%20vibrant%20colors%2C%20fantasy%20creature&width=300&height=170&seq=1&orientation=landscape",
+        "public/thai-food-noodles-spicy-boil-with-pork-boil-egg.jpg",
       category: "fish",
       isLimited: true,
     },
     {
       id: 2,  
-      name: "Phantom Megalodon - Sparkling Shiny | Limited fish",
-      price: "Rp 2500",
-      sold: "84+ Terjual",
+      name: "Mie Ayam",
+      price: "Rp 10.000",
+      sold: "5k+ Terjual",
       image:
-        "https://readdy.ai/api/search-image?query=A%20glowing%20red%20neon%20shark-like%20fish%20with%20sparkling%20scales%20against%20a%20dark%20blue%20background%2C%20digital%20game%20asset%2C%20high%20quality%20render%2C%20holographic%20effect%2C%20limited%20edition%20collectible%2C%20vibrant%20colors%2C%20fantasy%20creature&width=300&height=170&seq=2&orientation=landscape",
+        "public/095962400_1604981057-shutterstock_1827452876.jpg",
       category: "fish",
       isLimited: true,
     },
     {
       id: 3,
-      name: "100K Money",
-      price: "Rp 1000",
-      sold: "7+ Terjual",
+      name: "Jus Jeruk Segar",
+      price: "Rp 5.000",
+      sold: "500+ Terjual",
       image:
-        "https://readdy.ai/api/search-image?query=Golden%20coins%20and%20cash%20with%20100000%20text%20overlay%2C%20game%20currency%2C%20digital%20asset%2C%20shiny%20gold%20effect%20against%20a%20gradient%20blue%20background%2C%20premium%20game%20resource%2C%20high%20quality%20render&width=300&height=170&seq=3&orientation=landscape",
+        "public/juice-7556620_1280.jpg",
       category: "money",
       isLimited: false,
     },
     {
       id: 4,
-      name: "Electric Eel - Sparkling Shiny | Limited fish",
-      price: "Rp 3500",
-      sold: "25+ Terjual",
+      name: "Nasi Goreng",
+      price: "Rp 20.000",
+      sold: "3k+ Terjual",
       image:
-        "https://readdy.ai/api/search-image?query=A%20glowing%20electric%20blue%20eel%20with%20lightning%20effects%20and%20sparkling%20scales%20against%20a%20dark%20blue%20background%2C%20digital%20game%20asset%2C%20high%20quality%20render%2C%20holographic%20effect%2C%20limited%20edition%20collectible%2C%20vibrant%20colors%2C%20fantasy%20creature&width=300&height=170&seq=4&orientation=landscape",
+        "public/american-shrimp-fried-rice-served-with-chili-fish-sauce-thai-food.jpg",
       category: "fish",
       isLimited: true,
     },
     {
       id: 5,
-      name: "Ruby Piranha - Sparkling Shiny | Limited fish",
-      price: "Rp 3000",
-      sold: "52+ Terjual",
+      name: "Ayam Geprek",
+      price: "Rp 10.000",
+      sold: "4k+ Terjual",
       image:
-        "https://readdy.ai/api/search-image?query=A%20glowing%20red%20piranha%20fish%20with%20ruby%20accents%20and%20sparkling%20scales%20against%20a%20dark%20blue%20background%2C%20digital%20game%20asset%2C%20high%20quality%20render%2C%20holographic%20effect%2C%20limited%20edition%20collectible%2C%20vibrant%20colors%2C%20fantasy%20creature&width=300&height=170&seq=5&orientation=landscape",
+        "public/31f2ddfc6d17441c81c5633b6cd01700.jpg",
       category: "fish",
       isLimited: true,
     },
     {
       id: 6,
-      name: "ROD OF THE EXALTED ONE | BUNDLE 3 RELIC",
-      price: "Rp 5000",
-      sold: "12+ Terjual",
+      name: "Risoles",
+      price: "Rp 1.000",
+      sold: "100+ Terjual",
       image:
-        "https://readdy.ai/api/search-image?query=A%20glowing%20golden%20fishing%20rod%20with%20magical%20runes%20and%20three%20attached%20relics%20against%20a%20blue%20gradient%20background%2C%20digital%20game%20asset%2C%20high%20quality%20render%2C%20legendary%20item%2C%20bundle%20pack%2C%20fantasy%20equipment&width=300&height=170&seq=6&orientation=landscape",
+        "public/download (3).jpg",
       category: "equipment",
       isLimited: true,
     },
@@ -90,7 +90,7 @@ const App = () => {
               >
                 Semua Menu
               </button>
-              <button
+              <button 
                 onClick={() => setActiveTab("fish")}
                 className={`px-4 py-2 cursor-pointer whitespace-nowrap !rounded-button ${
                   activeTab === "fish"
@@ -136,11 +136,11 @@ const App = () => {
                     className="w-full h-48 object-cover object-top"
                   />
                   <div className="absolute top-0 left-0 bg-red-600 text-xs font-bold px-2 py-1 m-2 rounded">
-                    FISH STORE
+                    MIEATS
                   </div>
                   {item.isLimited && (
                     <div className="absolute bottom-0 left-0 bg-yellow-600 text-xs font-bold px-2 py-1 m-2 rounded">
-                      LIMITED FISH
+                      Bintang 5
                     </div>
                   )}
                   {item.isLimited && (
@@ -157,8 +157,8 @@ const App = () => {
                     <span className="text-gray-300">{item.price}</span>
                     <span className="text-gray-400 text-sm">{item.sold}</span>
                   </div>
-                  <button className="w-full bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-500 hover:to-yellow-600 py-2 rounded text-center font-medium cursor-pointer whitespace-nowrap !rounded-button">
-                    Kuning Item
+                  <button className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 py-2 rounded text-center font-medium cursor-pointer whitespace-nowrap !rounded-button">
+                    Beli Sekarang
                   </button>
                 </div>
               </div>
