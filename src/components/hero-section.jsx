@@ -17,8 +17,8 @@ function HeroSection() {
       <div className="relative w-full h-screen max-h-[600px] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10"></div>
         <img
-          src="public/annie-spratt-R3LcfTvcGWY-unsplash.jpg"
-          alt=""
+          src="annie-spratt-R3LcfTvcGWY-unsplash.jpg"
+          alt="Hero Image"
           className="absolute inset-0 h-full w-full object-cover object-center z-0"
         />
         <div className="relative z-20 container mx-auto px-6 h-full flex flex-col justify-center">
@@ -56,8 +56,8 @@ function HeroSection() {
                   <SwiperSlide>
                     <div className="relative h-72 md:h-80 overflow-hidden rounded-lg">
                       <img
-                        src="public/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
-                        alt="Roblox Dragon Character"
+                        src="jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
+                        alt="Seluruh makanan"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
@@ -65,8 +65,8 @@ function HeroSection() {
                   <SwiperSlide>
                     <div className="relative h-72 md:h-80 overflow-hidden rounded-lg">
                       <img
-                        src="public/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
-                        alt="Roblox Multiplayer Scene"
+                        src="jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
+                        alt="Seluruh makanan"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
@@ -74,8 +74,8 @@ function HeroSection() {
                   <SwiperSlide>
                     <div className="relative h-72 md:h-80 overflow-hidden rounded-lg">
                       <img
-                        src="public/emy-XoByiBymX20-unsplash.jpg"
-                        alt="Roblox Adventure Scene"
+                        src="emy-XoByiBymX20-unsplash.jpg"
+                        alt="Makanan pedas"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
@@ -90,7 +90,7 @@ function HeroSection() {
                     }`}
                   >
                     <img
-                      src="public/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
+                      src="jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
                       alt="Thumbnail 1"
                       className="w-full h-full object-cover object-top"
                     />
@@ -103,7 +103,7 @@ function HeroSection() {
                     }`}
                   >
                     <img
-                      src="public/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
+                      src="jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
                       alt="Thumbnail 2"
                       className="w-full h-full object-cover object-top"
                     />
@@ -116,7 +116,7 @@ function HeroSection() {
                     }`}
                   >
                     <img
-                      src="public/emy-XoByiBymX20-unsplash.jpg"
+                      src="emy-XoByiBymX20-unsplash.jpg"
                       alt="Thumbnail 3"
                       className="w-full h-full object-cover object-top"
                     />
@@ -136,7 +136,7 @@ function HeroSection() {
             <div className="bg-gray-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="h-48 mb-4 rounded-lg overflow-hidden">
                 <img
-                  src="public/robin-stickel-tzl1UCXg5Es-unsplash.jpg"
+                  src="robin-stickel-tzl1UCXg5Es-unsplash.jpg"
                   alt="Hamburger & Makanan Berat"
                   className="w-full h-full object-cover object-top"
                 />
@@ -164,7 +164,7 @@ function HeroSection() {
             <div className="bg-gray-100 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
               <div className="h-48 mb-4 rounded-lg overflow-hidden">
                 <img
-                  src="public/kaizen-nguy-n-jcLcWL8D7AQ-unsplash.jpg"
+                  src="kaizen-nguy-n-jcLcWL8D7AQ-unsplash.jpg"
                   alt="Minuman"
                   className="w-full h-full object-cover object-center"
                 />
