@@ -14,13 +14,13 @@ function Footer() {
       <nav>
         <h6 className="footer-title">Social Media</h6>
         <div className="grid grid-flow-col gap-4">
-          <a href='facebook.com/vestiazeta' className='hover:bg-green-300'> 
+          <a href='' className='hover:bg-green-300'> 
             <Facebook />
           </a>
-          <a href='youtube.com/vestiazeta' className='hover:bg-green-300'>
+          <a href='' className='hover:bg-green-300'>
             <Youtube />
           </a>
-          <a href='https://www.twitch.tv/vestiazeta' className='hover:bg-green-300'>
+          <a href='' className='hover:bg-green-300'>
             <Twitch />
           </a>
         </div>

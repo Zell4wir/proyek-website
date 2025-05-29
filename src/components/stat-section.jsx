@@ -1,4 +1,4 @@
-import { Star, Users, ShoppingCart } from "lucide-react";
+import { Star, Users, ShoppingCart, SquareMenu } from "lucide-react";
 import React from "react";
 
 function StatSection() {
@@ -15,9 +15,9 @@ function StatSection() {
           </div>
 
           <div className="font-bold text-white flex flex-col items-center">
-            <a href="/jualan-bervariasi" className="hover:text-green-700">
-              <ShoppingCart size={48} className="text-green-600 mb-2" />
-              <p className="text-lg">Jualan Bervariasi</p>
+            <a href="/menu-bervariasi" className="hover:text-green-700">
+              <SquareMenu size={48} className="text-green-600 mb-2" />
+              <p className="text-lg">Menu Bervariasi</p>
             </a>
           </div>
 

@@ -60,14 +60,18 @@ function HeroSection() {
         <div className="relative z-20 container mx-auto px-6 h-full flex flex-col justify-center">
           <div className="flex flex-col md:flex-row items-center">
             <div className="w-full md:w-1/2 text-white mb-10 md:mb-0">
-              <h1 className="text-6xl font-bold mb-6 tracking-wide">KANTIN HEN</h1>
+              <h1 className="text-6xl font-bold mb-6 tracking-wide">MIEATS</h1>
               <h2 className="text-3xl font-semibold mb-4">
                 Dapatkan Makanan Favoritmu dengan Harga{" "}
                 <span className="text-green-400">Termurah!</span>
               </h2>
-              <p className="text-lg mb-8 opacity-90">
-                Kami dengan bangga menyajikan berbagai pilihan makanan
-                lezat dan berkualitas untuk memuaskan selera Anda. Kami selalu menjaga kebersihan, rasa, dan pelayanan terbaik agar setiap pengalaman makan Anda di Kantin Hen menjadi istimewa. Nikmati berbagai menu favorit yang cocok untuk segala suasana, mulai dari camilan hingga makanan berat, semuanya tersedia dengan harga bersahabat.
+              <p className="text-lg mb-8 opacity-90 text-justify">
+                Kami dengan bangga menyajikan berbagai pilihan makanan lezat dan
+                berkualitas untuk memuaskan selera Anda. Kami selalu menjaga
+                rasa, pelayanan, dan kebersihan terbaik agar setiap pengalaman
+                makan Anda di Kantin Hen menjadi istimewa. Nikmati berbagai menu
+                favorit yang cocok untuk segala suasana, mulai dari camilan
+                hingga makanan berat, semuanya tersedia dengan harga bersahabat.
               </p>
             </div>
 
@@ -76,7 +80,7 @@ function HeroSection() {
                 <Swiper
                   ref={swiperRef}
                   modules={[Pagination, Autoplay, Navigation]}
-                  pagination={{ 
+                  pagination={{
                     clickable: true,
                     dynamicBullets: true,
                   }}
@@ -93,18 +97,18 @@ function HeroSection() {
                   <SwiperSlide>
                     <div className="relative h-72 md:h-80 overflow-hidden rounded-lg">
                       <img
-                        src="jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
+                        src="photo-1687426163461-1eeb49c83584.avif"
                         alt="Seluruh makanan"
-                        className="w-full h-full object-cover object-top"
+                        className="w-full h-full object-cover object-center"
                       />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="relative h-72 md:h-80 overflow-hidden rounded-lg">
                       <img
-                        src="davide-cantelli-jpkfc5_d-DI-unsplash.jpg"
+                        src="c263ada2-79fa-4d20-946c-6c76a84678742.jpg"
                         alt="Roti"
-                        className="w-full h-full object-cover object-center"
+                        className="w-screen h-full object-cover object-center"
                       />
                     </div>
                   </SwiperSlide>
@@ -128,7 +132,7 @@ function HeroSection() {
                     onClick={() => goToSlide(0)}
                   >
                     <img
-                      src="jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
+                      src="photo-1687426163461-1eeb49c83584.avif"
                       alt="Thumbnail 1"
                       className="w-full h-full object-cover object-top"
                     />
@@ -142,7 +146,7 @@ function HeroSection() {
                     onClick={() => goToSlide(1)}
                   >
                     <img
-                      src="davide-cantelli-jpkfc5_d-DI-unsplash.jpg"
+                      src="c263ada2-79fa-4d20-946c-6c76a84678742.jpg"
                       alt="Thumbnail 2"
                       className="w-full h-full object-cover object-center"
                     />

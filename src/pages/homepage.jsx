@@ -3,8 +3,9 @@ import NavBar from "../components/navbar";
 import HeroSection from "../components/hero-section";
 import StatSection from "../components/stat-section";
 import AboutSection from "../components/about-section";
-import Timeline from "../components/timeline";
 import Footer from "../components/footer";
+import MenuTerlaris from "../components/menu-terlaris";
+import TestiPelanggan from "../components/testi-pelanggan";
 
 
 export default function HomePage() {
@@ -14,7 +15,8 @@ export default function HomePage() {
       <HeroSection/>
       <AboutSection/>
       <StatSection/>
-      <Timeline/>
+      <MenuTerlaris/>
+      <TestiPelanggan/>
       <Footer/>
     </div>
   );
