@@ -65,8 +65,8 @@ function HeroSection() {
                   <SwiperSlide>
                     <div className="relative h-72 md:h-80 overflow-hidden rounded-lg">
                       <img
-                        src="jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
-                        alt="Seluruh makanan"
+                        src="davide-cantelli-jpkfc5_d-DI-unsplash.jpg"
+                        alt="Roti"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
@@ -103,7 +103,7 @@ function HeroSection() {
                     }`}
                   >
                     <img
-                      src="jimmy-dean-Yn0l7uwBrpw-unsplash.jpg"
+                      src="davide-cantelli-jpkfc5_d-DI-unsplash.jpg"
                       alt="Thumbnail 2"
                       className="w-full h-full object-cover object-top"
                     />
