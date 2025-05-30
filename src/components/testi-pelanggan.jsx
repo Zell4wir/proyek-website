@@ -2,7 +2,7 @@ import React from 'react'
 
 function TestiPelanggan() {
   return (
-    <ul className="list bg-base-100 rounded-box shadow-md gap-1 py-5">
+    <ul className="list bg-green-50 rounded-box shadow-md gap-1 py-5">
       <li className="p-4 pb-2 text-1xl tracking-wide">
         Testimoni dari Pelanggan MIEATS
       </li>

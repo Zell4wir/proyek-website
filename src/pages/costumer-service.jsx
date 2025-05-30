@@ -26,34 +26,34 @@ const CostumerService = () => {
   return (
     <>
       <NavBar/>
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-green-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl w-full bg-white rounded-lg shadow-lg overflow-hidden">
           <div className="flex flex-col">
             <div className="w-full p-8">
               <div className="max-w-lg mx-auto">
                 <div className="text-center mb-8">
-                  <h1 className="text-3xl font-bold text-gray-800">
+                  <h1 className="text-3xl font-bold text-green-800">
                     Kirim Pesan / Keluhan
                   </h1>
-                  <p className="text-gray-600 mt-2">
+                  <p className="text-green-700 mt-2">
                     Kami siap membantu menyelesaikan masalah Anda
                   </p>
                 </div>
                 {ticketNumber ? (
-                  <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
-                    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <i className="fas fa-check text-2xl text-green-500"></i>
+                  <div className="bg-green-100 border border-green-200 rounded-lg p-6 text-center">
+                    <div className="w-16 h-16 bg-green-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <i className="fas fa-check text-2xl text-green-600"></i>
                     </div>
-                    <h3 className="text-xl font-medium text-gray-800 mb-2">
+                    <h3 className="text-xl font-medium text-green-800 mb-2">
                       Pesan Terkirim!
                     </h3>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-green-700 mb-4">
                       Terima kasih atas masukan Anda. Kami akan segera menghubungi
                       Anda.
                     </p>
-                    <div className="bg-white border border-gray-200 rounded-lg p-3 inline-block">
-                      <span className="text-sm text-gray-500">Nomor Tiket:</span>
-                      <span className="font-medium ml-2 text-indigo-600">
+                    <div className="bg-white border border-green-200 rounded-lg p-3 inline-block">
+                      <span className="text-sm text-green-600">Nomor Tiket:</span>
+                      <span className="font-medium ml-2 text-green-700">
                         {ticketNumber}
                       </span>
                     </div>
@@ -65,7 +65,7 @@ const CostumerService = () => {
                         setConsent(false);
                         setTicketNumber(null);
                       }}
-                      className="mt-6 w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition cursor-pointer whitespace-nowrap !rounded-button"
+                      className="mt-6 w-full bg-green-400 text-white py-2 px-4 rounded-lg hover:bg-green-500 transition cursor-pointer whitespace-nowrap !rounded-button"
                     >
                       Kirim Pesan Baru
                     </button>
@@ -75,7 +75,7 @@ const CostumerService = () => {
                     <div>
                       <label
                         htmlFor="username"
-                        className="block text-sm font-medium text-gray-700 mb-1"
+                        className="block text-sm font-medium text-green-700 mb-1"
                       >
                         Username
                       </label>
@@ -85,14 +85,14 @@ const CostumerService = () => {
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                         placeholder="Masukkan username kamu..."
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                        className="w-full px-4 py-3 border border-green-200 rounded-lg focus:ring-green-400 focus:border-green-400 bg-green-50"
                         required
                       />
                     </div>
                     <div>
                       <label
                         htmlFor="message"
-                        className="block text-sm font-medium text-gray-700 mb-1"
+                        className="block text-sm font-medium text-green-700 mb-1"
                       >
                         Pesan / Keluhan
                       </label>
@@ -102,27 +102,27 @@ const CostumerService = () => {
                         onChange={(e) => setMessage(e.target.value)}
                         placeholder="Tulis pesan atau keluhan kamu di sini..."
                         rows={6}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                        className="w-full px-4 py-3 border border-green-200 rounded-lg focus:ring-green-400 focus:border-green-400 bg-green-50"
                         required
                       ></textarea>
                     </div>
                     <div>
                       <label
                         htmlFor="attachment"
-                        className="block text-sm font-medium text-gray-700 mb-1"
+                        className="block text-sm font-medium text-green-700 mb-1"
                       >
                         Lampiran (opsional)
                       </label>
                       <div className="flex items-center justify-center w-full">
-                        <label className="flex flex-col w-full h-24 border-2 border-dashed border-gray-300 rounded-lg hover:bg-gray-50 hover:border-indigo-300 transition cursor-pointer">
+                        <label className="flex flex-col w-full h-24 border-2 border-dashed border-green-200 rounded-lg hover:bg-green-100 hover:border-green-400 transition cursor-pointer">
                           <div className="flex flex-col items-center justify-center pt-5 pb-6">
-                            <i className="fas fa-cloud-upload-alt text-gray-400 text-2xl mb-2"></i>
-                            <p className="text-sm text-gray-500">
+                            <i className="fas fa-cloud-upload-alt text-green-300 text-2xl mb-2"></i>
+                            <p className="text-sm text-green-600">
                               {attachFile
                                 ? attachFile.name
                                 : "Klik untuk mengunggah file"}
                             </p>
-                            <p className="text-xs text-gray-400 mt-1">
+                            <p className="text-xs text-green-400 mt-1">
                               PNG, JPG, PDF (Maks. 5MB)
                             </p>
                           </div>
@@ -142,12 +142,12 @@ const CostumerService = () => {
                           type="checkbox"
                           checked={consent}
                           onChange={(e) => setConsent(e.target.checked)}
-                          className="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                          className="w-4 h-4 text-green-500 border-green-300 rounded focus:ring-green-400"
                           required
                         />
                       </div>
                       <div className="ml-3 text-sm">
-                        <label htmlFor="consent" className="text-gray-600">
+                        <label htmlFor="consent" className="text-green-700">
                           Saya menyetujui bahwa data saya akan diproses sesuai
                           dengan kebijakan privasi
                         </label>
@@ -161,9 +161,9 @@ const CostumerService = () => {
                         }
                         className={`w-full flex justify-center py-3 px-4 border border-transparent rounded-lg text-white text-base font-medium ${
                           isSubmitting || !username || !message || !consent
-                            ? "bg-gray-400 cursor-not-allowed"
-                            : "bg-green-500 hover:bg-green-600"
-                        } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition cursor-pointer whitespace-nowrap !rounded-button`}
+                            ? "bg-green-900 cursor-not-allowed hover:bg-green-600"
+                            : "bg-green-400 hover:bg-green-500"
+                        } focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-300 transition cursor-pointer whitespace-nowrap !rounded-button`}
                       >
                         {isSubmitting ? (
                           <>
@@ -179,15 +179,15 @@ const CostumerService = () => {
                       <div className="flex items-center justify-center space-x-4">
                         <button
                           type="button"
-                          className="flex items-center text-sm text-gray-500 hover:text-indigo-600 cursor-pointer whitespace-nowrap !rounded-button"
+                          className="flex items-center text-sm text-green-600 hover:text-green-800 cursor-pointer whitespace-nowrap !rounded-button"
                         >
                           <i className="fas fa-question-circle mr-2"></i>
                           FAQ
                         </button>
-                        <span className="text-gray-300">|</span>
+                        <span className="text-green-300">|</span>
                         <button
                           type="button"
-                          className="flex items-center text-sm text-gray-500 hover:text-indigo-600 cursor-pointer whitespace-nowrap !rounded-button"
+                          className="flex items-center text-sm text-green-600 hover:text-green-800 cursor-pointer whitespace-nowrap !rounded-button"
                         >
                           <i className="fas fa-history mr-2"></i>
                           Riwayat Tiket
