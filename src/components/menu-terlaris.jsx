@@ -2,7 +2,7 @@ import React from 'react'
 
 function MenuTerlaris() {
   return (
-    <div className="hero bg-base-200 max-h-screen p-20">
+    <div className=" bg-green-50 max-h-screen p-20">
       <div className="hero-content flex-col lg:flex-row">
         <img
           src="snapinstaapp_1080_317750253_328-20230114051714.jpg"

@@ -3,7 +3,7 @@ import React from "react";
 
 function StatSection() {
   return (
-    <section className="py-2">
+    <section className=" bg-green-50 py-2">
       <div className="relative w-full flex justify-center mb-6"></div>
       <div className="bg-[url(./ella.jpg)] bg-fixed">
         <div className="grid grid-cols-3 items-center text-center mx-auto bg-fixed bg-black/70 py-8">
