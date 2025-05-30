@@ -14,17 +14,17 @@ function NavBar() {
         <div className="flex-1 flex justify-center">
           <ul className="hidden md:flex gap-8">
             <li>
-              <a href="/" className="hover:text-green-500">
+              <a href="/" className="hover:text-green-500" onClick={() => setMenuOpen(false)}>
                 Home
               </a>
             </li>
             <li>
-              <a href="/menu" className="hover:text-green-500">
+              <a href="/menu" className="hover:text-green-500" onClick={() => setMenuOpen(false)}>
                 Menu
               </a>
             </li>
             <li>
-              <a href="/costumer-service" className="hover:text-green-500">
+              <a href="/costumer-service" className="hover:text-green-500" onClick={() => setMenuOpen(false)}>
                 Costumer Service
               </a>
             </li>
@@ -73,11 +73,11 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="/produk"
+                href="/menu"
                 className="hover:text-green-500"
                 onClick={() => setMenuOpen(false)}
               >
-                Produk
+                Menu
               </a>
             </li>
             <li>
