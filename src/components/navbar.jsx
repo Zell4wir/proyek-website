@@ -73,11 +73,11 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="/produk"
+                href="/menu"
                 className="hover:text-green-500"
                 onClick={() => setMenuOpen(false)}
               >
-                Produk
+                Menu
               </a>
             </li>
             <li>
