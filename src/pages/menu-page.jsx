@@ -110,8 +110,8 @@ const MenuPage = () => {
                 onClick={() => setActiveTab("all")}
                 className={`px-4 py-2 cursor-pointer whitespace-nowrap !rounded-button ${
                   activeTab === "all"
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-800 text-white hover:bg-gray-600"
+                    ? "bg-emerald-500 text-white font-bold"
+                    : "bg-emerald-500 text-white font-bold hover:bg-emerald-300"
                 }`}
               >
                 Semua Menu
@@ -120,8 +120,8 @@ const MenuPage = () => {
                 onClick={() => setActiveTab("makanan berat")}
                 className={`px-4 py-2 cursor-pointer whitespace-nowrap !rounded-button ${
                   activeTab === "makanan berat"
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-800 text-white hover:bg-gray-600"
+                    ? "bg-emerald-500 text-white font-bold"
+                    : "bg-emerald-500 text-white font-bold hover:bg-emerald-300"
                 }`}
               >
                 Makanan Berat
@@ -130,8 +130,8 @@ const MenuPage = () => {
                 onClick={() => setActiveTab("minuman")}
                 className={`px-4 py-2 cursor-pointer whitespace-nowrap !rounded-button ${
                   activeTab === "minuman"
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-800 text-white hover:bg-gray-600"
+                    ? "bg-emerald-500 text-white font-bold"
+                    : "bg-emerald-500 text-white font-bold hover:bg-emerald-300"
                 }`}
               >
                 Minuman
@@ -140,8 +140,8 @@ const MenuPage = () => {
                 onClick={() => setActiveTab("makanan penutup")}
                 className={`px-4 py-2 cursor-pointer whitespace-nowrap rounded-button ${
                   activeTab === "makanan penutup"
-                    ? "bg-blue-600 text-white"
-                    : "bg-gray-800 text-white hover:bg-gray-600"
+                    ? "bg-emerald-500 text-white font-bold"
+                    : "bg-emerald-500 text-white font-bold hover:bg-emerald-300"
                 }`}
               >
                 Makanan Penutup
@@ -152,7 +152,7 @@ const MenuPage = () => {
             {filteredItems.map((item) => (
               <div
                 key={item.id}
-                className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 cursor-pointer"
+                className="bg-emerald-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 cursor-pointer"
               >
                 <div className="relative">
                   <img
@@ -179,10 +179,10 @@ const MenuPage = () => {
                     {item.name}
                   </h3>
                   <div className="flex justify-between items-center mb-4">
-                    <span className="text-gray-300">{item.price}</span>
-                    <span className="text-gray-400 text-sm">{item.sold}</span>
+                    <span className="text-white font-bold">{item.price}</span>
+                    <span className="text-gray-700 font-bold text-sm">{item.sold}</span>
                   </div>
-                  <button className="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 py-2 rounded text-center font-medium cursor-pointer whitespace-nowrap !rounded-button">
+                  <button className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 py-2 rounded text-center font-medium cursor-pointer whitespace-nowrap !rounded-button">
                     Beli Sekarang
                   </button>
                 </div>
