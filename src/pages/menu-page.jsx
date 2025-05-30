@@ -106,12 +106,12 @@ const MenuPage = () => {
         className="min-h-screen text-white"
         style={{ backgroundColor: "#f0fdf4" }}
       >
-        <main className="container mx-auto py-8 px-4">
-          <div className="mb-8">
-            <div className="flex space-x-4 border-b border-gray-700 pb-2">
+        <main className="container mx-auto py-4 px-2 sm:py-8 sm:px-4">
+          <div className="mb-6 sm:mb-8">
+            <div className="flex flex-wrap gap-2 sm:space-x-4 border-b border-gray-700 pb-2">
               <button
                 onClick={() => setActiveTab("all")}
-                className={`px-4 py-2 cursor-pointer whitespace-nowrap !rounded-button ${
+                className={`px-3 py-2 sm:px-4 cursor-pointer whitespace-nowrap !rounded-button text-xs sm:text-base ${
                   activeTab === "all"
                     ? "bg-emerald-500 text-white font-bold"
                     : "bg-emerald-500 text-white font-bold hover:bg-emerald-300"
@@ -121,7 +121,7 @@ const MenuPage = () => {
               </button>
               <button
                 onClick={() => setActiveTab("makanan berat")}
-                className={`px-4 py-2 cursor-pointer whitespace-nowrap !rounded-button ${
+                className={`px-3 py-2 sm:px-4 cursor-pointer whitespace-nowrap !rounded-button text-xs sm:text-base ${
                   activeTab === "makanan berat"
                     ? "bg-emerald-500 text-white font-bold"
                     : "bg-emerald-500 text-white font-bold hover:bg-emerald-300"
@@ -131,7 +131,7 @@ const MenuPage = () => {
               </button>
               <button
                 onClick={() => setActiveTab("minuman")}
-                className={`px-4 py-2 cursor-pointer whitespace-nowrap !rounded-button ${
+                className={`px-3 py-2 sm:px-4 cursor-pointer whitespace-nowrap !rounded-button text-xs sm:text-base ${
                   activeTab === "minuman"
                     ? "bg-emerald-500 text-white font-bold"
                     : "bg-emerald-500 text-white font-bold hover:bg-emerald-300"
@@ -141,7 +141,7 @@ const MenuPage = () => {
               </button>
               <button
                 onClick={() => setActiveTab("makanan penutup")}
-                className={`px-4 py-2 cursor-pointer whitespace-nowrap rounded-button ${
+                className={`px-3 py-2 sm:px-4 cursor-pointer whitespace-nowrap rounded-button text-xs sm:text-base ${
                   activeTab === "makanan penutup"
                     ? "bg-emerald-500 text-white font-bold"
                     : "bg-emerald-500 text-white font-bold hover:bg-emerald-300"
@@ -151,17 +151,17 @@ const MenuPage = () => {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {filteredItems.map((item) => (
               <div
                 key={item.id}
-                className="bg-emerald-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:transform hover:scale-105 cursor-pointer"
+                className="bg-emerald-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 cursor-pointer"
               >
                 <div className="relative">
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-full h-48 object-cover object-top"
+                    className="w-full h-36 sm:h-48 object-cover object-top"
                   />
                   <div className="absolute top-0 left-0 bg-red-600 text-xs font-bold px-2 py-1 m-2 rounded">
                     MIEATS
@@ -177,17 +177,17 @@ const MenuPage = () => {
                     </div>
                   )}
                 </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold mb-2 h-14 line-clamp-2">
+                <div className="p-3 sm:p-4">
+                  <h3 className="text-base sm:text-lg font-semibold mb-2 h-10 sm:h-14 line-clamp-2">
                     {item.name}
                   </h3>
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="text-white font-bold">{item.price}</span>
-                    <span className="text-gray-700 font-bold text-sm">
+                  <div className="flex justify-between items-center mb-3 sm:mb-4">
+                    <span className="text-white font-bold text-sm sm:text-base">{item.price}</span>
+                    <span className="text-gray-700 font-bold text-xs sm:text-sm">
                       {item.sold}
                     </span>
                   </div>
-                  <button className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 py-2 rounded text-center font-medium cursor-pointer whitespace-nowrap !rounded-button">
+                  <button className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 py-2 rounded text-center font-medium cursor-pointer whitespace-nowrap !rounded-button text-xs sm:text-base">
                     Beli Sekarang
                   </button>
                 </div>
