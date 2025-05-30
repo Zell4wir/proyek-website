@@ -11,13 +11,13 @@ import TestiPelanggan from "../components/testi-pelanggan";
 export default function HomePage() {
   return (
     <div>
-      <NavBar/>
-      <HeroSection/>
-      <AboutSection/>
-      <StatSection/>
-      <MenuTerlaris/>
-      <TestiPelanggan/>
-      <Footer/>
+      <NavBar />
+      <HeroSection />
+      <AboutSection />
+      <StatSection />
+      <MenuTerlaris />
+      <TestiPelanggan />
+      <Footer />
     </div>
   );
 }

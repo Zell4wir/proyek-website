@@ -101,8 +101,11 @@ const MenuPage = () => {
       : gameItems.filter((item) => item.category === activeTab);
   return (
     <>
-      <NavBar/>
-      <div className="min-h-screen text-white">
+      <NavBar />
+      <div
+        className="min-h-screen text-white"
+        style={{ backgroundColor: "#f0fdf4" }}
+      >
         <main className="container mx-auto py-8 px-4">
           <div className="mb-8">
             <div className="flex space-x-4 border-b border-gray-700 pb-2">
@@ -116,7 +119,7 @@ const MenuPage = () => {
               >
                 Semua Menu
               </button>
-              <button 
+              <button
                 onClick={() => setActiveTab("makanan berat")}
                 className={`px-4 py-2 cursor-pointer whitespace-nowrap !rounded-button ${
                   activeTab === "makanan berat"
@@ -180,7 +183,9 @@ const MenuPage = () => {
                   </h3>
                   <div className="flex justify-between items-center mb-4">
                     <span className="text-white font-bold">{item.price}</span>
-                    <span className="text-gray-700 font-bold text-sm">{item.sold}</span>
+                    <span className="text-gray-700 font-bold text-sm">
+                      {item.sold}
+                    </span>
                   </div>
                   <button className="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 py-2 rounded text-center font-medium cursor-pointer whitespace-nowrap !rounded-button">
                     Beli Sekarang
